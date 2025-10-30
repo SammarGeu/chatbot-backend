@@ -1,0 +1,52 @@
+# --- Build artifacts ---
+/target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# --- Local runtime data ---
+/uploads/
+/logs/
+
+# --- Secrets & credentials ---
+.env
+*.jks
+*.keystore
+*.p12
+*.pem
+*.crt
+*.key
+
+# If your real values live in application.properties, keep it ignored:
+# (Recommended if you store actual keys locally)
+src/main/resources/application.properties
+
+# If you commit application.properties, it must only contain ${ENV_VAR} placeholders.
+# In that case, comment the ignore line above.
+
+# --- IDE / OS noise ---
+/.idea/
+*.iws
+*.iml
+*.ipr
+/.vscode/
+.DS_Store
+
+# --- Maven wrapper binary ---
+.mvn/wrapper/maven-wrapper.jar
+
+# --- NetBeans / STS (just in case) ---
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
